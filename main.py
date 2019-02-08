@@ -76,6 +76,8 @@ class KBTest(unittest.TestCase):
             'fact: (on disk3 peg1)',
             'fact: (on disk4 peg1)',
             'fact: (on disk5 peg1)',
+            'fact: (topPair disk1 peg3 disk3 peg1)',
+            'fact: (smaller disk2 disk4)'
         ]
         forbidden = [
             'fact: (movable disk1 peg3 peg3)',
