@@ -145,6 +145,7 @@ class KnowledgeBase(object):
             fact (Fact) - Statement to be asked (will be converted into a Fact)
         Returns:
             listof Bindings|False - list of Bindings if result found, False otherwise
+
         """
         #print("Asking {!r}".format(fact))
         if isinstance(fact, Fact):
@@ -159,6 +160,8 @@ class KnowledgeBase(object):
         else:
             print("Invalid ask:", fact)
             return False
+
+
 
     def kb_retract(self, fact):
         """Retract a fact from the KB

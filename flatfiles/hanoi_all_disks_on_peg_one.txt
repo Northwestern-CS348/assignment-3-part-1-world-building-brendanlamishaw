@@ -33,6 +33,8 @@ fact: (smaller disk2 disk3)
 fact: (smaller disk3 disk4)
 fact: (smaller disk4 disk5)
 
+rule: ((smaller ?d1 ?d2) (smaller ?d2 ?d3)) -> (smaller ?d1 ?d3)
+
 rule: ((on ?d1 ?p) (onTopOf ?d1 ?d2)) -> (on ?d2 ?p)
 
 rule: ((onTopOf ?d1 ?d2) (onTopOf ?d2 ?d3)) -> (onTopOf ?d1 ?d3)
